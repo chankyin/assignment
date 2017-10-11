@@ -1,0 +1,4 @@
+language: cpp
+
+script:
+  - g++ -pedantic-errors -std=c++11 a1/test.cpp -o a1/test && a1/test
