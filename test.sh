@@ -7,3 +7,5 @@ for dir in ./a*/; do
     RESULT=$(echo 0 | ./test | tee /dev/tty)
     echo "$RESULT" | grep FAILED --color=always && exit 2
 done
+
+exit 0
