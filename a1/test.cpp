@@ -20,7 +20,7 @@ void test(int taskNumber, int numberOfTestCases) {
   for (int i=1;i<=numberOfTestCases;i++) {
     string filename = to_string(taskNumber)+"_"+to_string(i)+".txt";
     cout << taskNumber << "_" << i << ": ";
-    exec("more input/"+filename+" | ./"+to_string(taskNumber)+" > yourOutput/"+filename);
+    exec("cat input/"+filename+" | ./"+to_string(taskNumber)+" > yourOutput/"+filename);
     string result = exec("diff yourOutput/"+filename +" expectedOutput/"+filename);
     if (result.size()==0) cout << "PASSED" << endl;
     else cout << "FAILED" << endl;
