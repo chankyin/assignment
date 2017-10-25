@@ -6,6 +6,7 @@ for dir in ./a*/; do
     cd ${dir}
     RESULT=$(echo 0 | ./test | tee /dev/tty)
     echo "$RESULT" | grep FAILED --color=always && exit 2
+    cd ..
 done
 
 exit 0
