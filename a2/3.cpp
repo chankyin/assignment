@@ -32,10 +32,10 @@ void display_common_integers(const int *arr1, const int *arr2, const int *arr3, 
           ++occ3;
         }
       }
-        for(int j = 0; j < accumulator + 1 && j < occ2 && j < occ3; ++j){ // TODO: may change this to ||
-          std::cout << arr1[i] << std::endl;
-          displayed = true;
-        }
+      for(int j = 0; j < accumulator + 1 && j < occ2 && j < occ3; ++j){ // TODO: may change this to ||
+        std::cout << arr1[i] << std::endl;
+        displayed = true;
+      }
       accumulator = 0; // reset counter if arr1[i + 1] != arr1[i]
     }
   }
