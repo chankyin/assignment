@@ -4,6 +4,37 @@
 
 //   Write your function definitions here
 
+void read_board(char *board, const int &squares){
+  for(int i = 0; i < squares; ++i){
+    std::cin >> board[i];
+  }
+}
+
+char evaluate_board(char *board, const int &squares){
+  const int lines[8][3] = {
+          {0, 1, 2},
+          {3, 4, 5},
+          {6, 7, 8},
+          {0, 3, 6},
+          {1, 4, 7},
+          {2, 5, 8},
+          {0, 4, 8},
+          {2, 4, 6}
+  };
+  for(int i = 0; i < 8; ++i){
+    if(board[lines[i][0]] == board[lines[i][1]] && board[lines[i][0]] == board[lines[i][2]]){
+      // assuming the empty squares have their correct value, e.g. '2' != '5'
+      return board[lines[i][0]];
+    }
+  }
+  for(int i = 0; i < 9; ++i){
+    if(board[i] != 'x' && board[i] != 'o'){
+      return 'u';
+    }
+  }
+  return 'd';
+}
+
 //----------------------DO NOT CHANGE ANYTHING BELOW THIS LINE------------------
 
 int main()
