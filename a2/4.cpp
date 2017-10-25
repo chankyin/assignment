@@ -15,12 +15,10 @@ void read_matrix(int matrix[MAXDIM][MAXDIM], int &dim){
   }
 }
 
-void display_inner_cw_rotated(int matrix[MAXDIM][MAXDIM], int dim){
+void display_inner_cw_rotated(int matrix[MAXDIM][MAXDIM], const int &dim){
   for(int y = 1; y < dim - 1; ++y){
-    bool first = true;
     for(int x = 1; x < dim - 1; ++x){
       std::cout << matrix[y][dim - 1 - x] << " ";
-      first = false;
     }
     std::cout << std::endl;
   }
