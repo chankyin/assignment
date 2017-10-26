@@ -1,0 +1,10 @@
+*
+!*/
+!/.travis.yml
+!/test.sh
+!*.md
+!*.cpp
+!a*/expectedOutput/*.txt
+!a*/input/*.txt
+!.gitignore
+
