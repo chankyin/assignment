@@ -1,0 +1,2 @@
+input/text_2.txt
+14

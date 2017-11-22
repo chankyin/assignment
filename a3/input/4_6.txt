@@ -1,0 +1,2 @@
+input/text_6.txt
+40

@@ -1,0 +1,2 @@
+input/text_7.txt
+61

@@ -1,0 +1,5 @@
+Articuno: Zapdos Moltres Mewtwo Mew
+Zapdos: Articuno Moltres Mewtwo Mew
+Moltres: Articuno Zapdos Mewtwo Mew
+Mewtwo: Articuno Zapdos Moltres Mew
+Mew: Articuno Zapdos Moltres Mewtwo

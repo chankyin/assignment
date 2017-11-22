@@ -1,0 +1,2 @@
+input/text_4.txt
+8

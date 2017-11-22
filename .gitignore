@@ -3,8 +3,8 @@
 !/.travis.yml
 !/test.sh
 !*.md
+!*.png
 !*.cpp
 !a*/expectedOutput/*.txt
 !a*/input/*.txt
 !.gitignore
-

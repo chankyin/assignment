@@ -1,0 +1,2 @@
+input/text_3.txt
+16
