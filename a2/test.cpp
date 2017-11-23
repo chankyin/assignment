@@ -16,7 +16,7 @@ string exec(string cmd) {
     return result;
 }
 void test(int taskNumber, int numberOfTestCases) {
-  exec("g++ -pedantic-errors -std=c++11 "+to_string(taskNumber)+".cpp -o"+to_string(taskNumber));
+  exec("g++ -g -pedantic-errors -std=c++11 "+to_string(taskNumber)+".cpp -o"+to_string(taskNumber));
   for (int i=1;i<=numberOfTestCases;i++) {
     string filename = to_string(taskNumber)+"_"+to_string(i)+".txt";
     cout << taskNumber << "_" << i << ": ";
