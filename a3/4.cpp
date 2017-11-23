@@ -29,7 +29,7 @@ int main()
     ofstream os(outputFile);
     initRuler(os, M);
 
-    
+
 
     os.close();
 

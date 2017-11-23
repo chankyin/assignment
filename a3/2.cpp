@@ -31,7 +31,7 @@ int areAnagram(string a, string b) {
 
 void findAnagram(const string haystack, const string needle) {
     for (int i = 0; i <= haystack.length() - needle.length(); ++i) {
-        if(haystack[i] != ' '){
+        if (haystack[i] != ' ') {
             int result = areAnagram(haystack.substr(i), needle);
             if (result != -1) {
                 cout << i << ' ' << (i + result) << endl;
@@ -46,7 +46,7 @@ int main()
     getline(cin, s);
     getline(cin, t);
 
-    if(s.length() > t.length()){
+    if (s.length() > t.length()) {
         findAnagram(s, t);
     }
 }

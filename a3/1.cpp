@@ -13,16 +13,13 @@ void alignNumbers(string &input1, string &input2) {
     }
 }
 
-string computeAddition(char high, char low, bool &carry){
-    int sum = 0;
-    if(high == '1') ++sum;
-    if(low == '1') ++sum;
-    if(carry) ++sum;
+string computeAddition(char high, char low, bool &carry) {
+    int sum = high - '0' + low - '0' + carry;
 
     carry = sum >= 2;
-    if(sum == 1 || sum == 3){
+    if (sum == 1 || sum == 3) {
         return "1";
-    }else{
+    } else {
         return "0";
     }
 }
@@ -41,6 +38,8 @@ int main()
     for (int i = length - 1; i >= 0; --i) {
         output = output.insert(0, computeAddition(input1[i], input2[i], carry));
     }
-    if(carry) output = output.insert(0, "1");
+    if (carry) {
+        output = output.insert(0, "1");
+    }
     cout << output << endl;
 }
